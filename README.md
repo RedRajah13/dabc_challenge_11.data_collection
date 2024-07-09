@@ -1,2 +1,6 @@
 # dabc_challenge_11.data_collection
 Module 11 - Data Collection homework
+
+In this challenge, I practiced web scraping to pull and analyze information from articles on two websites: https://static.bc-edx.com/data/web/mars_news/index.html and https://static.bc-edx.com/data/web/mars_facts/temperature.html. In the part_1_mars_news notebook, I looped through each article, pulled out relevant information, and stored that information in a DataFrame, which I saved to the mars_articles.json file for further investigation. 
+
+In the part_2_mars_weather notebook, I used BeautifulSoup to parse the html of the website to recreate the table from the web page as a DataFrame. I demonstrated two methods for this practice; first I used Pandas to read all of the html, and then I looped through the html of each row in the table and saved that information to a new DataFrame. Both DataFrames provide the exact same information. Then I used some data cleaning and visualization techniques to clean up the data and create bar and line graphs for visual data analysis. Several conclusions are written in the notebook, and my cleaned DataFrame is saved to the mars_climate_data.csv file.
